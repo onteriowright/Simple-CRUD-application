@@ -43,7 +43,7 @@ export const SaveNoteListComponent = () => {
           document.querySelector("#hidden-value").value = "";
           document.querySelector("#text-firstInput").value = "";
           document.querySelector("#text-lastInput").value = "";
-          document.querySelector("#select-age").value = "";
+          document.querySelector("#select-age").value = "0";
         });
       } else {
         const newNote = {
@@ -56,7 +56,13 @@ export const SaveNoteListComponent = () => {
           eventHub.dispatchEvent(updateMessageCustomEvent);
           document.querySelector("#text-firstInput").value = "";
           document.querySelector("#text-lastInput").value = "";
-          document.querySelector("#select-age").value = "";
+          document.querySelector("#select-age").value = "0";
+          let btn = document.querySelector("#show-note");
+          if (btn.value === "Show Notes") {
+            btn.value = "Hide Notes";
+          } else {
+            btn.value = "Show Notes";
+          }
         });
       }
     }
