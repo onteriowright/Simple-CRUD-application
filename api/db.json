@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "id": 3,
+      "firstName": "Onterio",
+      "lastName": "Wright",
+      "age": "32"
+    },
+    {
+      "id": 4,
+      "firstName": "Danyeal",
+      "lastName": "Wright",
+      "age": "33"
+    }
+  ]
+}
