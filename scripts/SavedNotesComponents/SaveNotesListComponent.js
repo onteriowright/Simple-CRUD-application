@@ -85,7 +85,6 @@ export const SaveNoteListComponent = () => {
     targetElement.innerHTML = `${SavedNotesComponent(age)}`;
   };
 
-  // let show = "Show Notes";
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "show-note") {
       let btn = document.querySelector("#show-note");
